@@ -3,14 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Reference function to get button text
-function getButtonText() {
-  return 'Click on me!';
-}
+// function getButtonText() {
+//   return 'Click on me!';
+// }
 
 // Create a react component
 const App = () => {
   // variables that store data
-  // const buttonText = 'click here';
+  const buttonText = { text: 'submit' };
 
   return (
     <div>
@@ -18,7 +18,7 @@ const App = () => {
       <input id='name' type='text' />
       <button style={{ backgroundColor: 'blue', color: 'white' }}>
         {/* You can reference a variable or a function */}
-        {getButtonText()}
+        {buttonText.text}
       </button>
     </div>
   );
